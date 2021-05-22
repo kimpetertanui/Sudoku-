@@ -1,5 +1,4 @@
-
-Privacy Friendly Sudoku is a logic based game. 
+ Sudoku is a logic based game. 
 
 ### API Reference
 
