@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.secuso.privacyfriendlysudoku.ui.view">
+    package="com.peter.sudoku.ui.app">
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
-        android:name="org.secuso.privacyfriendlysudoku.SudokuApp"
+        android:name="com.secuso.privacyfriendlysudoku.SudokuApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="org.secuso.privacyfriendlysudoku.ui.SplashActivity"
+            android:name="com.secuso.privacyfriendlysudoku.ui.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,27 +20,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.secuso.privacyfriendlysudoku.ui.MainActivity"
+            android:name="com.secuso.privacyfriendlysudoku.ui.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="org.secuso.privacyfriendlysudoku.ui.TutorialActivity"
+            android:name="com.secuso.privacyfriendlysudoku.ui.TutorialActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="org.secuso.privacyfriendlysudoku.ui.DailySudokuActivity"
+            android:name="com.secuso.privacyfriendlysudoku.ui.DailySudokuActivity"
             android:label="@string/Sudoku"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="org.secuso.privacyfriendlysudoku.ui.CreateSudokuActivity"
+            android:name="com.secuso.privacyfriendlysudoku.ui.CreateSudokuActivity"
             android:label="@string/Sudoku"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="org.secuso.privacyfriendlysudoku.ui.SettingsActivity"
+            android:name="com.secuso.privacyfriendlysudoku.ui.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName="org.secuso.privacyfriendlysudoku.ui.MainActivity" />
+            android:parentActivityName="com.secuso.privacyfriendlysudoku.ui.MainActivity" />
         <activity
-            android:name="org.secuso.privacyfriendlysudoku.ui.GameActivity"
+            android:name="com.secuso.privacyfriendlysudoku.ui.GameActivity"
             android:label="@string/title_activity_game_view"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme.NoActionBar">
@@ -62,18 +62,23 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name="org.secuso.privacyfriendlysudoku.ui.AboutActivity" />
-        <activity android:name="org.secuso.privacyfriendlysudoku.ui.LoadGameActivity" />
+        <activity android:name="com.secuso.privacyfriendlysudoku.ui.AboutActivity" />
+        <activity android:name="com.secuso.privacyfriendlysudoku.ui.LoadGameActivity" />
         <activity
-            android:name="org.secuso.privacyfriendlysudoku.ui.StatsActivity"
+            android:name="com.secuso.privacyfriendlysudoku.ui.StatsActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="org.secuso.privacyfriendlysudoku.ui.HelpActivity"
+            android:name="com.secuso.privacyfriendlysudoku.ui.HelpActivity"
             android:label="@string/title_activity_help" />
         <service
-            android:name="org.secuso.privacyfriendlysudoku.controller.GeneratorService"
+            android:name="com.secuso.privacyfriendlysudoku.controller.GeneratorService"
             android:enabled="true"
             android:exported="false" />
+
+        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id"/>
     </application>
 
 </manifest>

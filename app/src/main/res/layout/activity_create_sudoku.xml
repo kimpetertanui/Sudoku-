@@ -29,6 +29,24 @@
         </com.google.android.material.appbar.AppBarLayout>
 
         <include layout="@layout/content_game_view_create_sudoku" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_id"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+            </com.google.android.gms.ads.AdView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
@@ -41,5 +59,6 @@
         android:background="?attr/lightestBackGround"
         app:menu="@menu/menu_drawer"
         app:headerLayout="@layout/nav_header" />
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
