@@ -5,7 +5,7 @@ pipeline {
             steps {
               // bat "rmdir  /s /q Sudoku-"
                 bat "git clone https://github.com/kimpetertanui/Sudoku-.git"
-                bat "mvn clean -f TicketBookingServiceJunitTesting"
+                bat "mvn clean -f Sudoku-"
             }
         }
         stage('install') {
